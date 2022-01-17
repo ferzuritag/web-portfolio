@@ -1,5 +1,4 @@
-const { Router, response } = require("express");
-response;
+const { Router } = require("express");
 router.get("/", (req, resp = response) => {
   resp.send("index");
 });

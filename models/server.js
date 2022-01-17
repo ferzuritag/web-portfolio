@@ -1,8 +1,9 @@
 const express = require("express");
+require("dotenv").config();
 class Server {
   constructor() {
     this.app = express();
-    this.port = 80;
+    this.port = process.env.PORT;
     this.config();
     this.listen();
   }
