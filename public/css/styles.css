@@ -49,6 +49,7 @@ p {
   cursor: pointer;
   display: none;
 }
+
 .btn_menu .btn_menu__bar {
   display: block;
   background-color: white;
@@ -87,6 +88,7 @@ p {
   margin-top: 60px;
   background: url("../assets/hero.jpg") no-repeat;
   background-size: cover;
+  padding: 0 10%;
 }
 
 #main .hero-img,
@@ -97,6 +99,7 @@ p {
 #main .title,
 #main .legend {
   color: white;
+  text-align: left;
 }
 #main::before {
   position: absolute;
@@ -120,7 +123,7 @@ p {
   width: 100%;
 }
 .title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #333;
 }
@@ -309,12 +312,27 @@ p {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   * {
     line-height: 30px;
   }
   .hero-img {
     width: 300px;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+  .legend {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  * {
+    line-height: 30px;
+  }
+  .hero-img {
+    width: 250px;
   }
   .title {
     font-size: 1rem;
