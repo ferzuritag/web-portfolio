@@ -6,29 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fernando Zurita | Web Dev Jr</title>
+    <meta name="description"
+        content="I offer consulting services, development of web pages and custom applications and creation of databases in Cd. Victoria, Tamaulipas.">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header">
-            <img src="./assets/brand.svg" alt="logo">
-            <nav>
-                <ul class="nav">
+        <header id="header">
+            <img class="header__brand" src="./assets/brand.svg" alt="logo">
+            <nav class="navbar">
+                <ul>
                     <li><a href="#">About Me</a></li>
                     <li><a href="#core">Core Skills</a></li>
-                    <li><a href="#projectsandexperience">Projects and Experience</a></li>
+                    <li><a href="#projectsandexperience">Projects and
+                            Experience</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <span id="burguer_menu_btn" class="btn_menu">
-                <i class="btn_menu__bar"></i>
-                <i class="btn_menu__bar"></i>
-                <i class="btn_menu__bar"></i>
-            </span>
+            <div id="burguer-btn" onclick="">
+                <i class="fas fa-bars"></i>
+            </div>
         </header>
 
-        <main id="main">
+        <main id="main" class="section">
             <img class="hero-img" src="./assets/mypic.jpg" alt="Image">
             <h1 class="title">Hi! i'm Fernando Zurita</h1>
             <p class="legend">I'm a passionate Systems Engineer and Web Developer Jr, lover of solving problems,
@@ -45,29 +48,29 @@
             <p>
             <div class="tech_gallery">
                 <div id="html" class="tech_gallery__item">
-                    <img src="./assets/techs/html5.png" alt="">
-                    <h3>HTML5</h3>
+                    <i class="fab fa-html5"></i>
+                    <p class="legend">HTML5</p>
                 </div>
                 <div id="css" class="tech_gallery__item">
-                    <img src="./assets/techs/css.png" alt="">
-                    <h3>CSS3</h3>
+                    <i class="fab fa-css3-alt"></i>
+                    <p class="legend">CSS3</p>
                 </div>
                 <div id="js" class="tech_gallery__item">
-                    <img src="./assets/techs/js.png" alt="">
-                    <h3>Javascript</h3>
+                    <i class="fab fa-js"></i>
+                    <p class="legend">Javascript</p>
                 </div>
                 <div id="reactjs" class="tech_gallery__item">
-                    <img src="./assets/techs/react.png" alt="">
-                    <h3>React.js</h3>
+                    <i class="fab fa-react"></i>
+                    <p class="legend">React.js</p>
                 </div>
                 <div id="nodejs" class="tech_gallery__item">
-                    <img src="./assets/techs/nodejs.png" alt="">
-                    <h3>Node.js</h3>
+                    <i class="fab fa-node-js"></i>
+                    <p class="legend">Node.js</p>
                 </div>
             </div>
         </section>
 
-        <section id="projectsandexperience" class="section bg-white">
+        <section id="projectsandexperience" class="section">
             <h1 class="title">Projects and Experience</h1>
             <p class="legend">I did my professional interships from July to December 2021 in <a class="link"
                     href="https://comunidav.org/">Comunidav</a>
@@ -81,8 +84,8 @@
                         complementary credits, for this
                         application React.js and Firebase were used.</p>
 
-                    <a class="github-btn" href="https://github.com/ferzuritag/creditsApp" target="_blank"><img
-                            src="./assets/github.png" alt=""></a>
+                    <a class="github-btn" href="https://github.com/ferzuritag/creditsApp" target="_blank"><i
+                            class="fab fa-github"></i></a>
 
                 </div>
                 <div id="comunidav" class="projects_gallery__item">
@@ -90,23 +93,23 @@
                     <p>This is an administrative web application developed for the company comunidav that helps to
                         have a better management
                         and visualization of the information in its database.</p>
-                    <a class="github-btn" href="https://github.com/ferzuritag/comunidav" target="_blank"><img
-                            src="./assets/github.png" alt=""></a>
+                    <a class="" href="https://github.com/ferzuritag/comunidav" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
                 </div>
         </section>
 
         <footer id="contact" class="section">
-            <h1 class="title">Contact Me On</h1>
-            <address>
-                <a class="contact_card" href="https://www.linkedin.com/in/fernando-zurita-164a13211/" target="_blank">
-                    <img src="./assets/footer/linkedin.png" alt="">
-                    <p>Linkedin</p>
-                </a>
-                <a class="contact_card" href="mailto:ferzuritag@hotmail.com" target="_blank">
-                    <img src="./assets/footer/outlook.svg" alt="">
-                    <p>Outlook</p>
-                </a>
-            </address>
+            <h2 class="title">Contact Me On</h1>
+                <address>
+                    <a class="contact_card" href="https://www.linkedin.com/in/fernando-zurita-164a13211/"
+                        target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a class="contact_card" href="mailto:ferzuritag@hotmail.com" target="_blank">
+                        <i class="fas fa-at"></i>
+                    </a>
+                </address>
         </footer>
     </div>
     <script src="./js/main.js"></script>

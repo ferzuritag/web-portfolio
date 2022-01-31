@@ -1,8 +1,7 @@
 addEventListener("DOMContentLoaded", () => {
-  const btn_menu = document.getElementById("burguer_menu_btn");
+  const btn_menu = document.getElementById("burguer-btn");
   btn_menu.addEventListener("click", () => {
-    const menu_items = document.querySelector(".nav");
-    menu_items.classList.toggle("show");
-    console.log("ALGOO");
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("show");
   });
 });
